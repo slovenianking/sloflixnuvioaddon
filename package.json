@@ -1,18 +1,16 @@
 {
-  "name": "sloflix-stremio-addon",
-  "version": "1.0.0",
-  "description": "Neuradni Stremio addon za SloFlix katalog (filmi in serije), z uporabo lastnega SloFlix racuna.",
-  "main": "addon.js",
+  "name": "sloflixnuvioaddon",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Neuradni Stremio/Nuvio addon za SloFlix katalog (filmi in serije), za Cloudflare Workers, z uporabo lastnega SloFlix racuna.",
   "scripts": {
-    "start": "node addon.js"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
   },
-  "engines": {
-    "node": ">=18.0.0"
-  },
-  "keywords": ["stremio", "addon", "sloflix", "nuvio"],
-  "author": "",
+  "keywords": ["stremio", "addon", "sloflix", "nuvio", "cloudflare-workers"],
   "license": "MIT",
-  "dependencies": {
-    "stremio-addon-sdk": "^1.6.10"
+  "devDependencies": {
+    "wrangler": "^4.0.0"
   }
 }

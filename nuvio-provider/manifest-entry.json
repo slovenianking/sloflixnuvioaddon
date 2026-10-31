@@ -1,0 +1,13 @@
+{
+  "id": "sloflix",
+  "name": "SloFlix",
+  "description": "Best-effort SloFlix scraper (TMDB title match -> SloFlix search). Requires your own SloFlix account and a free TMDB API key edited into sloflix.js.",
+  "version": "1.0.0",
+  "author": "",
+  "supportedTypes": ["movie", "tv"],
+  "filename": "providers/sloflix.js",
+  "enabled": true,
+  "contentLanguage": ["sl"],
+  "formats": ["mp4"],
+  "limited": false
+}

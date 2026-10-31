@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Mora se ujemati z imenom projekta v Cloudflare (Workers & Pages -> Settings -> Build).
+  "name": "sloflixnuvioaddon",
+  "main": "src/index.js",
+  "compatibility_date": "2025-09-01",
+  "workers_dev": true,
+  // Ikona (/icon.png) se streže kot statična datoteka, vse ostalo obdela Worker.
+  "assets": {
+    "directory": "./public"
+  },
+  "vars": {
+    // Privzeti SloFlix API. Spremenite le, če se je naslov spremenil.
+    "SLOFLIX_API_URL": "https://api.sloflix.com"
+    // Neobvezno: "PUBLIC_URL": "https://sloflixnuvioaddon.<vaš-subdomena>.workers.dev"
+  },
+  "observability": {
+    "enabled": true
+  }
+}
